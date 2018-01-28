@@ -10,7 +10,7 @@ https://github.com/cow8/PupilTracking
 # HOW TO USE IT
 1. set up opencv dir in ./detector/CMakeLists.txt: 
 ```
-	SET("OpenCV_DIR" "<path to the /opencv/build/>")
+SET("OpenCV_DIR" "<path to the /opencv/build/>")
 ```
 
 2. download the [LPW](http://datasets.d2.mpi-inf.mpg.de/tonsen/LPW.zip) dataset and decompress into ./LPW
@@ -21,10 +21,10 @@ python gen_videofiles.py
 ```
 
 4. compile detector:
-	```
-	cd detector
-	make
-	```
+```
+cd detector
+make
+```
 5. run the detector
 ```
 ./detector/PupilDetection
@@ -69,11 +69,13 @@ line 2 - line 502: (e.g. Pixcel  242: 0.999) means the accuracy(0.999) with cond
 # Optional: fine-tune
 
 1. make the dataset
-```python ./train_evaluator/makedataset.py```
+```
+python ./train_evaluator/makedataset.py
+```
 2. train
 ```
-	download pretrain vgg model and put it into /train_evaluator/pretrain_vgg
-	python ./train_evaluator/train.py
+download pretrain vgg model and put it into /train_evaluator/pretrain_vgg
+python ./train_evaluator/train.py
 ```
 
 # Code reference
