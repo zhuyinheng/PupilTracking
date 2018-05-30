@@ -1,8 +1,5 @@
 # PLEASE CHECK THE GITHUB FOR THE LATEST VERSION:
-https://github.com/cow8/PupilTracking
-
-*This paper is submitted to the [ETRA](http://etra.acm.org/2018/) conference*
-
+[Paper](https://arxiv.org/abs/1805.00311)
 # REQUIREMENT:
 - opencv 3.3.0
 - tensorflow 1.2.1
